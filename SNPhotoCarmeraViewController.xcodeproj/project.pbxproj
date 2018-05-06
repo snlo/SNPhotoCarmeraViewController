@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5EB001AF209F6244003E8AF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB001AE209F6244003E8AF8 /* AppDelegate.m */; };
+		5EB001B2209F6244003E8AF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB001B1209F6244003E8AF8 /* ViewController.m */; };
+		5EB001B5209F6244003E8AF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB001B3209F6244003E8AF8 /* Main.storyboard */; };
+		5EB001B7209F6245003E8AF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EB001B6209F6245003E8AF8 /* Assets.xcassets */; };
+		5EB001BA209F6245003E8AF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB001B8209F6245003E8AF8 /* LaunchScreen.storyboard */; };
+		5EB001BD209F6245003E8AF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB001BC209F6245003E8AF8 /* main.m */; };
+		5EB001C7209F6245003E8AF8 /* SNPhotoCarmeraViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB001C6209F6245003E8AF8 /* SNPhotoCarmeraViewControllerTests.m */; };
+		5EB001D2209F6245003E8AF8 /* SNPhotoCarmeraViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB001D1209F6245003E8AF8 /* SNPhotoCarmeraViewControllerUITests.m */; };
+		5EB001E8209F6257003E8AF8 /* SNPhotoCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB001E0209F6257003E8AF8 /* SNPhotoCameraViewController.m */; };
+		5EB001E9209F6257003E8AF8 /* CropImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB001E5209F6257003E8AF8 /* CropImageController.m */; };
+		5EB001EA209F6257003E8AF8 /* SNPhotoCarmeraTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB001E6209F6257003E8AF8 /* SNPhotoCarmeraTool.m */; };
+		5EB001EB209F6257003E8AF8 /* UIImage+SNPhotoCarmera.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB001E7209F6257003E8AF8 /* UIImage+SNPhotoCarmera.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5EB001C3209F6245003E8AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EB001A2209F6244003E8AF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EB001A9209F6244003E8AF8;
+			remoteInfo = SNPhotoCarmeraViewController;
+		};
+		5EB001CE209F6245003E8AF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EB001A2209F6244003E8AF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EB001A9209F6244003E8AF8;
+			remoteInfo = SNPhotoCarmeraViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5EB001AA209F6244003E8AF8 /* SNPhotoCarmeraViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNPhotoCarmeraViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EB001AD209F6244003E8AF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5EB001AE209F6244003E8AF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5EB001B0209F6244003E8AF8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5EB001B1209F6244003E8AF8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5EB001B4209F6244003E8AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5EB001B6209F6245003E8AF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5EB001B9209F6245003E8AF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5EB001BB209F6245003E8AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EB001BC209F6245003E8AF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5EB001C2209F6245003E8AF8 /* SNPhotoCarmeraViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNPhotoCarmeraViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EB001C6209F6245003E8AF8 /* SNPhotoCarmeraViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNPhotoCarmeraViewControllerTests.m; sourceTree = "<group>"; };
+		5EB001C8209F6245003E8AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EB001CD209F6245003E8AF8 /* SNPhotoCarmeraViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNPhotoCarmeraViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EB001D1209F6245003E8AF8 /* SNPhotoCarmeraViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SNPhotoCarmeraViewControllerUITests.m; sourceTree = "<group>"; };
+		5EB001D3209F6245003E8AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EB001E0209F6257003E8AF8 /* SNPhotoCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNPhotoCameraViewController.m; sourceTree = "<group>"; };
+		5EB001E1209F6257003E8AF8 /* SNPhotoCarmeraTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNPhotoCarmeraTool.h; sourceTree = "<group>"; };
+		5EB001E2209F6257003E8AF8 /* CropImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropImageController.h; sourceTree = "<group>"; };
+		5EB001E3209F6257003E8AF8 /* UIImage+SNPhotoCarmera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SNPhotoCarmera.h"; sourceTree = "<group>"; };
+		5EB001E4209F6257003E8AF8 /* SNPhotoCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNPhotoCameraViewController.h; sourceTree = "<group>"; };
+		5EB001E5209F6257003E8AF8 /* CropImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropImageController.m; sourceTree = "<group>"; };
+		5EB001E6209F6257003E8AF8 /* SNPhotoCarmeraTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNPhotoCarmeraTool.m; sourceTree = "<group>"; };
+		5EB001E7209F6257003E8AF8 /* UIImage+SNPhotoCarmera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SNPhotoCarmera.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EB001A7209F6244003E8AF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EB001BF209F6245003E8AF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EB001CA209F6245003E8AF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5EB001A1209F6244003E8AF8 = {
+			isa = PBXGroup;
+			children = (
+				5EB001AC209F6244003E8AF8 /* SNPhotoCarmeraViewController */,
+				5EB001C5209F6245003E8AF8 /* SNPhotoCarmeraViewControllerTests */,
+				5EB001D0209F6245003E8AF8 /* SNPhotoCarmeraViewControllerUITests */,
+				5EB001AB209F6244003E8AF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5EB001AB209F6244003E8AF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EB001AA209F6244003E8AF8 /* SNPhotoCarmeraViewController.app */,
+				5EB001C2209F6245003E8AF8 /* SNPhotoCarmeraViewControllerTests.xctest */,
+				5EB001CD209F6245003E8AF8 /* SNPhotoCarmeraViewControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EB001AC209F6244003E8AF8 /* SNPhotoCarmeraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5EB001AD209F6244003E8AF8 /* AppDelegate.h */,
+				5EB001AE209F6244003E8AF8 /* AppDelegate.m */,
+				5EB001B0209F6244003E8AF8 /* ViewController.h */,
+				5EB001B1209F6244003E8AF8 /* ViewController.m */,
+				5EB001DF209F6257003E8AF8 /* SNPhotoCarmeraViewController */,
+				5EB001B3209F6244003E8AF8 /* Main.storyboard */,
+				5EB001B6209F6245003E8AF8 /* Assets.xcassets */,
+				5EB001B8209F6245003E8AF8 /* LaunchScreen.storyboard */,
+				5EB001BB209F6245003E8AF8 /* Info.plist */,
+				5EB001BC209F6245003E8AF8 /* main.m */,
+			);
+			path = SNPhotoCarmeraViewController;
+			sourceTree = "<group>";
+		};
+		5EB001C5209F6245003E8AF8 /* SNPhotoCarmeraViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5EB001C6209F6245003E8AF8 /* SNPhotoCarmeraViewControllerTests.m */,
+				5EB001C8209F6245003E8AF8 /* Info.plist */,
+			);
+			path = SNPhotoCarmeraViewControllerTests;
+			sourceTree = "<group>";
+		};
+		5EB001D0209F6245003E8AF8 /* SNPhotoCarmeraViewControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5EB001D1209F6245003E8AF8 /* SNPhotoCarmeraViewControllerUITests.m */,
+				5EB001D3209F6245003E8AF8 /* Info.plist */,
+			);
+			path = SNPhotoCarmeraViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		5EB001DF209F6257003E8AF8 /* SNPhotoCarmeraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5EB001E0209F6257003E8AF8 /* SNPhotoCameraViewController.m */,
+				5EB001E1209F6257003E8AF8 /* SNPhotoCarmeraTool.h */,
+				5EB001E2209F6257003E8AF8 /* CropImageController.h */,
+				5EB001E3209F6257003E8AF8 /* UIImage+SNPhotoCarmera.h */,
+				5EB001E4209F6257003E8AF8 /* SNPhotoCameraViewController.h */,
+				5EB001E5209F6257003E8AF8 /* CropImageController.m */,
+				5EB001E6209F6257003E8AF8 /* SNPhotoCarmeraTool.m */,
+				5EB001E7209F6257003E8AF8 /* UIImage+SNPhotoCarmera.m */,
+			);
+			path = SNPhotoCarmeraViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EB001A9209F6244003E8AF8 /* SNPhotoCarmeraViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EB001D6209F6245003E8AF8 /* Build configuration list for PBXNativeTarget "SNPhotoCarmeraViewController" */;
+			buildPhases = (
+				5EB001A6209F6244003E8AF8 /* Sources */,
+				5EB001A7209F6244003E8AF8 /* Frameworks */,
+				5EB001A8209F6244003E8AF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNPhotoCarmeraViewController;
+			productName = SNPhotoCarmeraViewController;
+			productReference = 5EB001AA209F6244003E8AF8 /* SNPhotoCarmeraViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5EB001C1209F6245003E8AF8 /* SNPhotoCarmeraViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EB001D9209F6245003E8AF8 /* Build configuration list for PBXNativeTarget "SNPhotoCarmeraViewControllerTests" */;
+			buildPhases = (
+				5EB001BE209F6245003E8AF8 /* Sources */,
+				5EB001BF209F6245003E8AF8 /* Frameworks */,
+				5EB001C0209F6245003E8AF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EB001C4209F6245003E8AF8 /* PBXTargetDependency */,
+			);
+			name = SNPhotoCarmeraViewControllerTests;
+			productName = SNPhotoCarmeraViewControllerTests;
+			productReference = 5EB001C2209F6245003E8AF8 /* SNPhotoCarmeraViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5EB001CC209F6245003E8AF8 /* SNPhotoCarmeraViewControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EB001DC209F6245003E8AF8 /* Build configuration list for PBXNativeTarget "SNPhotoCarmeraViewControllerUITests" */;
+			buildPhases = (
+				5EB001C9209F6245003E8AF8 /* Sources */,
+				5EB001CA209F6245003E8AF8 /* Frameworks */,
+				5EB001CB209F6245003E8AF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EB001CF209F6245003E8AF8 /* PBXTargetDependency */,
+			);
+			name = SNPhotoCarmeraViewControllerUITests;
+			productName = SNPhotoCarmeraViewControllerUITests;
+			productReference = 5EB001CD209F6245003E8AF8 /* SNPhotoCarmeraViewControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EB001A2209F6244003E8AF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = snloveydus;
+				TargetAttributes = {
+					5EB001A9209F6244003E8AF8 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					5EB001C1209F6245003E8AF8 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 5EB001A9209F6244003E8AF8;
+					};
+					5EB001CC209F6245003E8AF8 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 5EB001A9209F6244003E8AF8;
+					};
+				};
+			};
+			buildConfigurationList = 5EB001A5209F6244003E8AF8 /* Build configuration list for PBXProject "SNPhotoCarmeraViewController" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5EB001A1209F6244003E8AF8;
+			productRefGroup = 5EB001AB209F6244003E8AF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EB001A9209F6244003E8AF8 /* SNPhotoCarmeraViewController */,
+				5EB001C1209F6245003E8AF8 /* SNPhotoCarmeraViewControllerTests */,
+				5EB001CC209F6245003E8AF8 /* SNPhotoCarmeraViewControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EB001A8209F6244003E8AF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EB001BA209F6245003E8AF8 /* LaunchScreen.storyboard in Resources */,
+				5EB001B7209F6245003E8AF8 /* Assets.xcassets in Resources */,
+				5EB001B5209F6244003E8AF8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EB001C0209F6245003E8AF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EB001CB209F6245003E8AF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EB001A6209F6244003E8AF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EB001B2209F6244003E8AF8 /* ViewController.m in Sources */,
+				5EB001BD209F6245003E8AF8 /* main.m in Sources */,
+				5EB001AF209F6244003E8AF8 /* AppDelegate.m in Sources */,
+				5EB001EB209F6257003E8AF8 /* UIImage+SNPhotoCarmera.m in Sources */,
+				5EB001EA209F6257003E8AF8 /* SNPhotoCarmeraTool.m in Sources */,
+				5EB001E9209F6257003E8AF8 /* CropImageController.m in Sources */,
+				5EB001E8209F6257003E8AF8 /* SNPhotoCameraViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EB001BE209F6245003E8AF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EB001C7209F6245003E8AF8 /* SNPhotoCarmeraViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EB001C9209F6245003E8AF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EB001D2209F6245003E8AF8 /* SNPhotoCarmeraViewControllerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5EB001C4209F6245003E8AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EB001A9209F6244003E8AF8 /* SNPhotoCarmeraViewController */;
+			targetProxy = 5EB001C3209F6245003E8AF8 /* PBXContainerItemProxy */;
+		};
+		5EB001CF209F6245003E8AF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EB001A9209F6244003E8AF8 /* SNPhotoCarmeraViewController */;
+			targetProxy = 5EB001CE209F6245003E8AF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5EB001B3209F6244003E8AF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EB001B4209F6244003E8AF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5EB001B8209F6245003E8AF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EB001B9209F6245003E8AF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5EB001D4209F6245003E8AF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5EB001D5209F6245003E8AF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EB001D7209F6245003E8AF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SNPhotoCarmeraViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = snlo.SNPhotoCarmeraViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5EB001D8209F6245003E8AF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SNPhotoCarmeraViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = snlo.SNPhotoCarmeraViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5EB001DA209F6245003E8AF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SNPhotoCarmeraViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = snlo.SNPhotoCarmeraViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SNPhotoCarmeraViewController.app/SNPhotoCarmeraViewController";
+			};
+			name = Debug;
+		};
+		5EB001DB209F6245003E8AF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SNPhotoCarmeraViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = snlo.SNPhotoCarmeraViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SNPhotoCarmeraViewController.app/SNPhotoCarmeraViewController";
+			};
+			name = Release;
+		};
+		5EB001DD209F6245003E8AF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SNPhotoCarmeraViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = snlo.SNPhotoCarmeraViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SNPhotoCarmeraViewController;
+			};
+			name = Debug;
+		};
+		5EB001DE209F6245003E8AF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SNPhotoCarmeraViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = snlo.SNPhotoCarmeraViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SNPhotoCarmeraViewController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EB001A5209F6244003E8AF8 /* Build configuration list for PBXProject "SNPhotoCarmeraViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EB001D4209F6245003E8AF8 /* Debug */,
+				5EB001D5209F6245003E8AF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EB001D6209F6245003E8AF8 /* Build configuration list for PBXNativeTarget "SNPhotoCarmeraViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EB001D7209F6245003E8AF8 /* Debug */,
+				5EB001D8209F6245003E8AF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EB001D9209F6245003E8AF8 /* Build configuration list for PBXNativeTarget "SNPhotoCarmeraViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EB001DA209F6245003E8AF8 /* Debug */,
+				5EB001DB209F6245003E8AF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EB001DC209F6245003E8AF8 /* Build configuration list for PBXNativeTarget "SNPhotoCarmeraViewControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EB001DD209F6245003E8AF8 /* Debug */,
+				5EB001DE209F6245003E8AF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5EB001A2209F6244003E8AF8 /* Project object */;
+}

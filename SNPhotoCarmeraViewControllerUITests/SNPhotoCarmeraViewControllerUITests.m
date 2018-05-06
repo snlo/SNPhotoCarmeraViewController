@@ -1,18 +1,18 @@
 //
-//  SNPhotoCarmeraViewControllorUITests.m
-//  SNPhotoCarmeraViewControllorUITests
+//  SNPhotoCarmeraViewControllerUITests.m
+//  SNPhotoCarmeraViewControllerUITests
 //
-//  Created by snlo on 2018/5/6.
-//  Copyright © 2018年 snlo. All rights reserved.
+//  Created by sunDong on 2018/5/7.
+//  Copyright © 2018年 snloveydus. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface SNPhotoCarmeraViewControllorUITests : XCTestCase
+@interface SNPhotoCarmeraViewControllerUITests : XCTestCase
 
 @end
 
-@implementation SNPhotoCarmeraViewControllorUITests
+@implementation SNPhotoCarmeraViewControllerUITests
 
 - (void)setUp {
     [super setUp];
