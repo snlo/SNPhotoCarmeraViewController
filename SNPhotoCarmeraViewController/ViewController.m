@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "SNPhotoCameraViewController.h"
+
 @interface ViewController ()
 
 @end
