@@ -1,9 +1,9 @@
 //
 //  SNPhotoCameraViewController.m
-//  NeighborMom
+//  SNPhotoCarmeraViewControllor
 //
-//  Created by sunDong on 16/4/11.
-//  Copyright © 2016年 WAYOS. All rights reserved.
+//  Created by snlo on 16/4/11.
+//  Copyright © 2016年 snlo. All rights reserved.
 //
 
 #import "SNPhotoCameraViewController.h"
@@ -15,7 +15,7 @@
 #import <Photos/Photos.h>
 #import <AVFoundation/AVFoundation.h>
 
-#import "CropImageController.h"
+#import "SNPhotoCarmeraCropImageController.h"
 #import "SNPhotoCarmeraTool.h"
 
 typedef void(^SelectedImageBlock)(UIImage * valueImage);
@@ -56,18 +56,18 @@ typedef void(^SelectedCancelBlock)(void);
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     if (picker.sourceType == UIImagePickerControllerSourceTypeCamera) {
         if ([info[UIImagePickerControllerMediaType] isEqualToString:(NSString*)kUTTypeImage]) {
-            [[SNPhotoCarmeraTool topViewController].navigationController popViewControllerAnimated:NO];
+            [[SNTool topViewController].navigationController popViewControllerAnimated:NO];
             UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
             CGFloat width = [UIScreen mainScreen].bounds.size.width;
             CGFloat height = image.size.height * (width/image.size.width);
             UIImage * orImage = [self imageWithImageSimple:image scaledToSize:CGSizeMake(width, height)];
-            CropImageController * VC = [CropImageController cropImageViewControllerWithImage:orImage ratio:0.5 seletecedBlock:^(UIImage *image) {
+            SNPhotoCarmeraCropImageController * VC = [SNPhotoCarmeraCropImageController cropImageViewControllerWithImage:orImage ratio:0.5 seletecedBlock:^(UIImage *image) {
                 self.selectedImage = image;
             } cancelBlock:^{
                 
             }];
             VC.isOvalcropView = YES;
-            [[SNPhotoCarmeraTool topViewController].navigationController pushViewController:VC animated:YES];
+            [[SNTool topViewController].navigationController pushViewController:VC animated:YES];
             
             return;
             
@@ -83,13 +83,13 @@ typedef void(^SelectedCancelBlock)(void);
         CGFloat width = [UIScreen mainScreen].bounds.size.width;
         CGFloat height = image.size.height * (width/image.size.width);
         UIImage * orImage = [self imageWithImageSimple:image scaledToSize:CGSizeMake(width, height)];
-        CropImageController * VC = [CropImageController cropImageViewControllerWithImage:orImage ratio:0.5 seletecedBlock:^(UIImage *image) {
+        SNPhotoCarmeraCropImageController * VC = [SNPhotoCarmeraCropImageController cropImageViewControllerWithImage:orImage ratio:0.5 seletecedBlock:^(UIImage *image) {
             self.selectedImage = image;
         } cancelBlock:^{
             
         }];
         VC.isOvalcropView = YES;
-        [[SNPhotoCarmeraTool topViewController].navigationController pushViewController:VC animated:YES];
+        [[SNTool topViewController].navigationController pushViewController:VC animated:YES];
         
         
         
@@ -117,7 +117,7 @@ typedef void(^SelectedCancelBlock)(void);
     [self.parentVC dismissViewControllerAnimated:YES completion:nil];
 }
 
-#pragma mark -- CropImageDelegate
+#pragma mark -- SNPhotoCarmeraCropImageDelegate
 - (void)cropImageDidFinishedWithImage:(UIImage *)image {
     if (self.selectedImageBlock) {
         self.selectedImageBlock(image);
@@ -152,7 +152,7 @@ typedef void(^SelectedCancelBlock)(void);
 //    ALAuthorizationStatus author = [ALAssetsLibrary authorizationStatus];
     if (author == kCLAuthorizationStatusRestricted || author == kCLAuthorizationStatusDenied){
         //无权限 引导去开启
-        [SNPhotoCarmeraTool showAlertStyle:UIAlertControllerStyleAlert title:@"提示" msg:@"没有相册访问权限，是否去设置中开启" chooseBlock:^(NSInteger actionIndx) {
+        [SNTool showAlertStyle:UIAlertControllerStyleAlert title:@"提示" msg:@"没有相册访问权限，是否去设置中开启" chooseBlock:^(NSInteger actionIndx) {
             if (actionIndx == 1) {
                 NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
                 if ([[UIApplication sharedApplication] canOpenURL:url]) {
@@ -176,7 +176,7 @@ typedef void(^SelectedCancelBlock)(void);
     if (authStatus == AVAuthorizationStatusRestricted ||//此应用程序没有被授权访问的照片数据。可能是家长控制权限
         authStatus == AVAuthorizationStatusDenied) { //用户已经明确否认了这一照片数据的应用程序访问
         // 无权限 引导去开启
-        [SNPhotoCarmeraTool showAlertStyle:UIAlertControllerStyleAlert title:@"提示" msg:@"没有相机访问权限，是否去设置中开启" chooseBlock:^(NSInteger actionIndx) {
+        [SNTool showAlertStyle:UIAlertControllerStyleAlert title:@"提示" msg:@"没有相机访问权限，是否去设置中开启" chooseBlock:^(NSInteger actionIndx) {
             if (actionIndx == 1) {
                 NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
                 if ([[UIApplication sharedApplication] canOpenURL:url]) {
@@ -198,7 +198,7 @@ typedef void(^SelectedCancelBlock)(void);
         [self.parentVC presentViewController:self.imagePickerController animated:YES completion:nil];
         
     } else {
-        [SNPhotoCarmeraTool showAlertStyle:UIAlertControllerStyleAlert title:nil msg:@"当前设备不支持拍照" chooseBlock:nil actionsStatement:@"确定", nil];
+        [SNTool showAlertStyle:UIAlertControllerStyleAlert title:nil msg:@"当前设备不支持拍照" chooseBlock:nil actionsStatement:@"确定", nil];
     }
 }
 - (void)selectedBlock:(void(^)(UIImage *image))selectedBlock cancelBlock:(void(^)(void))cancelBlock {
@@ -231,14 +231,14 @@ typedef void(^SelectedCancelBlock)(void);
     } return _imagePickerController;
 }
 
-- (void)setContentColor:(UIColor *)contentColor {
-	_contentColor = contentColor;
-	[SNPhotoCarmeraTool sharedManager].contentColor = _contentColor;
-}
-- (void)setBlackColor:(UIColor *)blackColor {
-	_blackColor = blackColor;
-	[SNPhotoCarmeraTool sharedManager].blackColor = _blackColor;
-}
+//- (void)setContentColor:(UIColor *)contentColor {
+//    _contentColor = contentColor;
+////    [SNTool sharedManager].contentColor = _contentColor;
+//}
+//- (void)setBlackColor:(UIColor *)blackColor {
+//    _blackColor = blackColor;
+////    [SNTool sharedManager].blackColor = _blackColor;
+//}
 
 
 @end

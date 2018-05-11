@@ -1,9 +1,9 @@
 //
 //  SNPhotoCameraViewController.h
-//  NeighborMom
+//  SNPhotoCarmeraViewControllor
 //
-//  Created by sunDong on 16/4/11.
-//  Copyright © 2016年 WAYOS. All rights reserved.
+//  Created by snlo on 16/4/11.
+//  Copyright © 2016年 snlo. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

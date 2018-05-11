@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		089FE61340D0557CC60C51CD /* libPods-SNPhotoCarmeraViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 274C90DCB489ECC9A5700AB4 /* libPods-SNPhotoCarmeraViewController.a */; };
 		5EB001AF209F6244003E8AF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB001AE209F6244003E8AF8 /* AppDelegate.m */; };
 		5EB001B2209F6244003E8AF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB001B1209F6244003E8AF8 /* ViewController.m */; };
 		5EB001B5209F6244003E8AF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB001B3209F6244003E8AF8 /* Main.storyboard */; };
@@ -16,9 +17,12 @@
 		5EB001C7209F6245003E8AF8 /* SNPhotoCarmeraViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB001C6209F6245003E8AF8 /* SNPhotoCarmeraViewControllerTests.m */; };
 		5EB001D2209F6245003E8AF8 /* SNPhotoCarmeraViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB001D1209F6245003E8AF8 /* SNPhotoCarmeraViewControllerUITests.m */; };
 		5EB001E8209F6257003E8AF8 /* SNPhotoCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB001E0209F6257003E8AF8 /* SNPhotoCameraViewController.m */; };
-		5EB001E9209F6257003E8AF8 /* CropImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB001E5209F6257003E8AF8 /* CropImageController.m */; };
+		5EB001E9209F6257003E8AF8 /* SNPhotoCarmeraCropImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB001E5209F6257003E8AF8 /* SNPhotoCarmeraCropImageController.m */; };
 		5EB001EA209F6257003E8AF8 /* SNPhotoCarmeraTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB001E6209F6257003E8AF8 /* SNPhotoCarmeraTool.m */; };
 		5EB001EB209F6257003E8AF8 /* UIImage+SNPhotoCarmera.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB001E7209F6257003E8AF8 /* UIImage+SNPhotoCarmera.m */; };
+		72AA17F933F086EFAE1952B6 /* libPods-SNPhotoCarmeraViewControllerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E5443D4BE9FB12850D0F722 /* libPods-SNPhotoCarmeraViewControllerTests.a */; };
+		989C0CDD20A59BAB0027BC58 /* SNPhotoCarmera.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 989C0CDC20A59BAB0027BC58 /* SNPhotoCarmera.bundle */; };
+		FC5BF4F08F6A198BFFA4319A /* libPods-SNPhotoCarmeraViewControllerUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C48D2F44FB33F908CD8DBC93 /* libPods-SNPhotoCarmeraViewControllerUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22F105613B8AC69B92AA1D72 /* Pods-SNPhotoCarmeraViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNPhotoCarmeraViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-SNPhotoCarmeraViewController/Pods-SNPhotoCarmeraViewController.release.xcconfig"; sourceTree = "<group>"; };
+		274C90DCB489ECC9A5700AB4 /* libPods-SNPhotoCarmeraViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SNPhotoCarmeraViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB001AA209F6244003E8AF8 /* SNPhotoCarmeraViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNPhotoCarmeraViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB001AD209F6244003E8AF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5EB001AE209F6244003E8AF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,12 +63,22 @@
 		5EB001D3209F6245003E8AF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EB001E0209F6257003E8AF8 /* SNPhotoCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNPhotoCameraViewController.m; sourceTree = "<group>"; };
 		5EB001E1209F6257003E8AF8 /* SNPhotoCarmeraTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNPhotoCarmeraTool.h; sourceTree = "<group>"; };
-		5EB001E2209F6257003E8AF8 /* CropImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropImageController.h; sourceTree = "<group>"; };
+		5EB001E2209F6257003E8AF8 /* SNPhotoCarmeraCropImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNPhotoCarmeraCropImageController.h; sourceTree = "<group>"; };
 		5EB001E3209F6257003E8AF8 /* UIImage+SNPhotoCarmera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SNPhotoCarmera.h"; sourceTree = "<group>"; };
 		5EB001E4209F6257003E8AF8 /* SNPhotoCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNPhotoCameraViewController.h; sourceTree = "<group>"; };
-		5EB001E5209F6257003E8AF8 /* CropImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropImageController.m; sourceTree = "<group>"; };
+		5EB001E5209F6257003E8AF8 /* SNPhotoCarmeraCropImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNPhotoCarmeraCropImageController.m; sourceTree = "<group>"; };
 		5EB001E6209F6257003E8AF8 /* SNPhotoCarmeraTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNPhotoCarmeraTool.m; sourceTree = "<group>"; };
 		5EB001E7209F6257003E8AF8 /* UIImage+SNPhotoCarmera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SNPhotoCarmera.m"; sourceTree = "<group>"; };
+		6E5443D4BE9FB12850D0F722 /* libPods-SNPhotoCarmeraViewControllerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SNPhotoCarmeraViewControllerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		989C0CDC20A59BAB0027BC58 /* SNPhotoCarmera.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SNPhotoCarmera.bundle; sourceTree = "<group>"; };
+		989C0CE020A59BCD0027BC58 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		989C0CE120A59BCD0027BC58 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		ACAAFCAB91E401F8CE34186B /* Pods-SNPhotoCarmeraViewControllerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNPhotoCarmeraViewControllerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SNPhotoCarmeraViewControllerUITests/Pods-SNPhotoCarmeraViewControllerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C0901F50FB51857BE41AB020 /* Pods-SNPhotoCarmeraViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNPhotoCarmeraViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNPhotoCarmeraViewController/Pods-SNPhotoCarmeraViewController.debug.xcconfig"; sourceTree = "<group>"; };
+		C1C20BA9CA47EDBA8F4406E2 /* Pods-SNPhotoCarmeraViewControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNPhotoCarmeraViewControllerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNPhotoCarmeraViewControllerTests/Pods-SNPhotoCarmeraViewControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C48D2F44FB33F908CD8DBC93 /* libPods-SNPhotoCarmeraViewControllerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SNPhotoCarmeraViewControllerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE1ECFFDFFF6BF39754BD74 /* Pods-SNPhotoCarmeraViewControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNPhotoCarmeraViewControllerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SNPhotoCarmeraViewControllerTests/Pods-SNPhotoCarmeraViewControllerTests.release.xcconfig"; sourceTree = "<group>"; };
+		CBFA4611D902B24558012CA0 /* Pods-SNPhotoCarmeraViewControllerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNPhotoCarmeraViewControllerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNPhotoCarmeraViewControllerUITests/Pods-SNPhotoCarmeraViewControllerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				089FE61340D0557CC60C51CD /* libPods-SNPhotoCarmeraViewController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72AA17F933F086EFAE1952B6 /* libPods-SNPhotoCarmeraViewControllerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +102,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC5BF4F08F6A198BFFA4319A /* libPods-SNPhotoCarmeraViewControllerUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BDC00EB3E5C9D12F9D8DA0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				274C90DCB489ECC9A5700AB4 /* libPods-SNPhotoCarmeraViewController.a */,
+				6E5443D4BE9FB12850D0F722 /* libPods-SNPhotoCarmeraViewControllerTests.a */,
+				C48D2F44FB33F908CD8DBC93 /* libPods-SNPhotoCarmeraViewControllerUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5646AAE89DDC91029B8C2E9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0901F50FB51857BE41AB020 /* Pods-SNPhotoCarmeraViewController.debug.xcconfig */,
+				22F105613B8AC69B92AA1D72 /* Pods-SNPhotoCarmeraViewController.release.xcconfig */,
+				C1C20BA9CA47EDBA8F4406E2 /* Pods-SNPhotoCarmeraViewControllerTests.debug.xcconfig */,
+				CAE1ECFFDFFF6BF39754BD74 /* Pods-SNPhotoCarmeraViewControllerTests.release.xcconfig */,
+				CBFA4611D902B24558012CA0 /* Pods-SNPhotoCarmeraViewControllerUITests.debug.xcconfig */,
+				ACAAFCAB91E401F8CE34186B /* Pods-SNPhotoCarmeraViewControllerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5EB001A1209F6244003E8AF8 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +139,8 @@
 				5EB001C5209F6245003E8AF8 /* SNPhotoCarmeraViewControllerTests */,
 				5EB001D0209F6245003E8AF8 /* SNPhotoCarmeraViewControllerUITests */,
 				5EB001AB209F6244003E8AF8 /* Products */,
+				5646AAE89DDC91029B8C2E9D /* Pods */,
+				3BDC00EB3E5C9D12F9D8DA0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,14 +192,15 @@
 		5EB001DF209F6257003E8AF8 /* SNPhotoCarmeraViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5EB001E0209F6257003E8AF8 /* SNPhotoCameraViewController.m */,
-				5EB001E1209F6257003E8AF8 /* SNPhotoCarmeraTool.h */,
-				5EB001E2209F6257003E8AF8 /* CropImageController.h */,
-				5EB001E3209F6257003E8AF8 /* UIImage+SNPhotoCarmera.h */,
 				5EB001E4209F6257003E8AF8 /* SNPhotoCameraViewController.h */,
-				5EB001E5209F6257003E8AF8 /* CropImageController.m */,
+				5EB001E0209F6257003E8AF8 /* SNPhotoCameraViewController.m */,
+				5EB001E2209F6257003E8AF8 /* SNPhotoCarmeraCropImageController.h */,
+				5EB001E5209F6257003E8AF8 /* SNPhotoCarmeraCropImageController.m */,
+				5EB001E1209F6257003E8AF8 /* SNPhotoCarmeraTool.h */,
 				5EB001E6209F6257003E8AF8 /* SNPhotoCarmeraTool.m */,
+				5EB001E3209F6257003E8AF8 /* UIImage+SNPhotoCarmera.h */,
 				5EB001E7209F6257003E8AF8 /* UIImage+SNPhotoCarmera.m */,
+				989C0CDC20A59BAB0027BC58 /* SNPhotoCarmera.bundle */,
 			);
 			path = SNPhotoCarmeraViewController;
 			sourceTree = "<group>";
@@ -167,9 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EB001D6209F6245003E8AF8 /* Build configuration list for PBXNativeTarget "SNPhotoCarmeraViewController" */;
 			buildPhases = (
+				0E6D8A95186B046674D58F52 /* [CP] Check Pods Manifest.lock */,
 				5EB001A6209F6244003E8AF8 /* Sources */,
 				5EB001A7209F6244003E8AF8 /* Frameworks */,
 				5EB001A8209F6244003E8AF8 /* Resources */,
+				6A75940816667880781992FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,6 +231,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EB001D9209F6245003E8AF8 /* Build configuration list for PBXNativeTarget "SNPhotoCarmeraViewControllerTests" */;
 			buildPhases = (
+				E2BEDF7B5086C4CC25C7AEEF /* [CP] Check Pods Manifest.lock */,
 				5EB001BE209F6245003E8AF8 /* Sources */,
 				5EB001BF209F6245003E8AF8 /* Frameworks */,
 				5EB001C0209F6245003E8AF8 /* Resources */,
@@ -202,6 +250,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5EB001DC209F6245003E8AF8 /* Build configuration list for PBXNativeTarget "SNPhotoCarmeraViewControllerUITests" */;
 			buildPhases = (
+				EF9976874B0E7BA7FC0CB501 /* [CP] Check Pods Manifest.lock */,
 				5EB001C9209F6245003E8AF8 /* Sources */,
 				5EB001CA209F6245003E8AF8 /* Frameworks */,
 				5EB001CB209F6245003E8AF8 /* Resources */,
@@ -223,7 +272,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = snloveydus;
+				ORGANIZATIONNAME = snlo;
 				TargetAttributes = {
 					5EB001A9209F6244003E8AF8 = {
 						CreatedOnToolsVersion = 9.3;
@@ -245,6 +294,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 5EB001A1209F6244003E8AF8;
 			productRefGroup = 5EB001AB209F6244003E8AF8 /* Products */;
@@ -266,6 +316,7 @@
 				5EB001BA209F6245003E8AF8 /* LaunchScreen.storyboard in Resources */,
 				5EB001B7209F6245003E8AF8 /* Assets.xcassets in Resources */,
 				5EB001B5209F6244003E8AF8 /* Main.storyboard in Resources */,
+				989C0CDD20A59BAB0027BC58 /* SNPhotoCarmera.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +336,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E6D8A95186B046674D58F52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNPhotoCarmeraViewController-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A75940816667880781992FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SNPhotoCarmeraViewController/Pods-SNPhotoCarmeraViewController-resources.sh",
+				"${PODS_ROOT}/SNTool/SNTool/SNTool/SNTool.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SNTool.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SNPhotoCarmeraViewController/Pods-SNPhotoCarmeraViewController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2BEDF7B5086C4CC25C7AEEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNPhotoCarmeraViewControllerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF9976874B0E7BA7FC0CB501 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNPhotoCarmeraViewControllerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5EB001A6209F6244003E8AF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -295,7 +421,7 @@
 				5EB001AF209F6244003E8AF8 /* AppDelegate.m in Sources */,
 				5EB001EB209F6257003E8AF8 /* UIImage+SNPhotoCarmera.m in Sources */,
 				5EB001EA209F6257003E8AF8 /* SNPhotoCarmeraTool.m in Sources */,
-				5EB001E9209F6257003E8AF8 /* CropImageController.m in Sources */,
+				5EB001E9209F6257003E8AF8 /* SNPhotoCarmeraCropImageController.m in Sources */,
 				5EB001E8209F6257003E8AF8 /* SNPhotoCameraViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +462,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5EB001B4209F6244003E8AF8 /* Base */,
+				989C0CE020A59BCD0027BC58 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -344,6 +471,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5EB001B9209F6245003E8AF8 /* Base */,
+				989C0CE120A59BCD0027BC58 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -355,6 +483,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -413,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -463,14 +593,12 @@
 		};
 		5EB001D7209F6245003E8AF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0901F50FB51857BE41AB020 /* Pods-SNPhotoCarmeraViewController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SNPhotoCarmeraViewController/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = snlo.SNPhotoCarmeraViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -479,14 +607,12 @@
 		};
 		5EB001D8209F6245003E8AF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22F105613B8AC69B92AA1D72 /* Pods-SNPhotoCarmeraViewController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SNPhotoCarmeraViewController/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = snlo.SNPhotoCarmeraViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -495,15 +621,12 @@
 		};
 		5EB001DA209F6245003E8AF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1C20BA9CA47EDBA8F4406E2 /* Pods-SNPhotoCarmeraViewControllerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SNPhotoCarmeraViewControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = snlo.SNPhotoCarmeraViewControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -513,15 +636,12 @@
 		};
 		5EB001DB209F6245003E8AF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAE1ECFFDFFF6BF39754BD74 /* Pods-SNPhotoCarmeraViewControllerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SNPhotoCarmeraViewControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = snlo.SNPhotoCarmeraViewControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -531,14 +651,11 @@
 		};
 		5EB001DD209F6245003E8AF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBFA4611D902B24558012CA0 /* Pods-SNPhotoCarmeraViewControllerUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SNPhotoCarmeraViewControllerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = snlo.SNPhotoCarmeraViewControllerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -548,14 +665,11 @@
 		};
 		5EB001DE209F6245003E8AF8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACAAFCAB91E401F8CE34186B /* Pods-SNPhotoCarmeraViewControllerUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SNPhotoCarmeraViewControllerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = snlo.SNPhotoCarmeraViewControllerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

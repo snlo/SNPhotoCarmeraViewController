@@ -1,0 +1,952 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032516A43CD93C95F3B1A5610CCA390F /* SNTololMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 61050C90D7C1204834A36691D61690E3 /* SNTololMacro.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0EA1E0BF557F9E73FCE09DE4C41A6F69 /* SNTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD1B388613F28771075E6A363AD9125 /* SNTool-dummy.m */; };
+		1C76817FA5353D989D7BC33E8C5997B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409899CE1143F81E8130E2069D59605B /* CoreGraphics.framework */; };
+		2C85945225565991E4C44D618B183644 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */; };
+		34BFCB7244000E63B49439B08643FD31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */; };
+		3F3A5776EFDB87BEF1238C638D04E9CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */; };
+		63677A6AC8FD0A6027D00F4ED4261855 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */; };
+		6837AD005926AB2974513453DB787C5A /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2FA53C873B472A45FE331DA5634F3C /* MBProgressHUD-dummy.m */; };
+		6EBCA86C66F058931013230C739010DA /* Pods-SNPhotoCarmeraViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9704CB32D81003921519877DA00DB256 /* Pods-SNPhotoCarmeraViewController-dummy.m */; };
+		7291E906AE8A3C1F92183154FE65DCDD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7BDB2580B244756CFA046131516EF2 /* QuartzCore.framework */; };
+		897E2BE6A305D26BEF1B828D55F0F1DC /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = B22F3400BD4E4727DEEDC158B8616B57 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		93F12B05D8333C37D9CBEA3D1782CC04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */; };
+		9898B5B0A13ACC07B906AC0C973FFFD4 /* SNTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 64DB9AF3A6B603A6D403F0D824F9DEF3 /* SNTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9F13C27CEC0E04DC461E80D89F288648 /* Pods-SNPhotoCarmeraViewControllerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90AF2A77A26C66B5B38320C0244B3B12 /* Pods-SNPhotoCarmeraViewControllerTests-dummy.m */; };
+		C69CB262638480A1D90B75B5C3040090 /* Singletion.h in Headers */ = {isa = PBXBuildFile; fileRef = 789AB4D595F3D3D06052292D6E077913 /* Singletion.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D01D914A32045FB612DF530A976060A6 /* NSString+SNTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 440AA1CE93E7B2F7E14FB8573661AF0B /* NSString+SNTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D5452AD3DB0025907C99AF1C4A2574BA /* NSString+SNTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDA7935EDD5EBB03D3B36C2E28FB9A /* NSString+SNTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E1A5C1C515C0140C45452837C3BADBB1 /* SNTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3BEF2D2A8F61BD0B5EDD74C10C6255 /* SNTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E6EB93F9F0E4C5727BFC3147BA91C599 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE7FFB1970B5870516C0A2492DBAC61 /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EBC86F232CFC7F7B10FC6D178290D634 /* Pods-SNPhotoCarmeraViewControllerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 839C9743F7161DCABAE828F2403453DE /* Pods-SNPhotoCarmeraViewControllerUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26E7B48E48833CDCC832105B606A0E12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 586F2DFA9BDCC6675C2546793A69E5CC;
+			remoteInfo = MBProgressHUD;
+		};
+		97E88B7A0C34F64B80C3566DF489341C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF00F604392A6843B068BA2ED778AE12;
+			remoteInfo = "Pods-SNPhotoCarmeraViewController";
+		};
+		A5DCDD261010BB861B48376E21906043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 586F2DFA9BDCC6675C2546793A69E5CC;
+			remoteInfo = MBProgressHUD;
+		};
+		B96FA7E06370AAC00AE540494DA3A41A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF00F604392A6843B068BA2ED778AE12;
+			remoteInfo = "Pods-SNPhotoCarmeraViewController";
+		};
+		CC1878E9B34C79D2FCEE3D4243788348 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 314776269787A5536FF39FC49B9A407F;
+			remoteInfo = SNTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		065EF6168F187AFAFAFC038E6144E68D /* Pods-SNPhotoCarmeraViewController-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SNPhotoCarmeraViewController-acknowledgements.plist"; sourceTree = "<group>"; };
+		09445753996F4C2A8A71FEE497E2C2E1 /* libPods-SNPhotoCarmeraViewControllerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SNPhotoCarmeraViewControllerTests.a"; path = "libPods-SNPhotoCarmeraViewControllerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BDCDF3204CC98794FC63F74AB138E5A /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMBProgressHUD.a; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1031DE20DFDEE336B18056DDA2C63F11 /* Pods-SNPhotoCarmeraViewControllerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SNPhotoCarmeraViewControllerUITests-frameworks.sh"; sourceTree = "<group>"; };
+		12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		15F3AA45F7FE84EE591BA95907E669C4 /* SNTool.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SNTool.bundle; path = SNTool/SNTool/SNTool.bundle; sourceTree = "<group>"; };
+		1FD7EA3921F407CD56876D6CB4F215B4 /* Pods-SNPhotoCarmeraViewControllerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SNPhotoCarmeraViewControllerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		22BA71AAB7B5E78778B6E02952B1FB99 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		2A2FA53C873B472A45FE331DA5634F3C /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		3B8A8E20047268A011CB7C7EF3D8C7ED /* SNTool.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SNTool.xcconfig; sourceTree = "<group>"; };
+		3D4A3C8A55342D64DE8CAEB9162A3E68 /* Pods-SNPhotoCarmeraViewController-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SNPhotoCarmeraViewController-resources.sh"; sourceTree = "<group>"; };
+		409899CE1143F81E8130E2069D59605B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		440AA1CE93E7B2F7E14FB8573661AF0B /* NSString+SNTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SNTool.h"; path = "SNTool/SNTool/NSString+SNTool.h"; sourceTree = "<group>"; };
+		4B56A91D0030808375B4DF885E07464D /* Pods-SNPhotoCarmeraViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNPhotoCarmeraViewController.release.xcconfig"; sourceTree = "<group>"; };
+		5C4CB56C133BD6D4A3170FD7420F3BAF /* Pods-SNPhotoCarmeraViewControllerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNPhotoCarmeraViewControllerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F7BDB2580B244756CFA046131516EF2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		61050C90D7C1204834A36691D61690E3 /* SNTololMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SNTololMacro.h; path = SNTool/SNTool/SNTololMacro.h; sourceTree = "<group>"; };
+		64DB9AF3A6B603A6D403F0D824F9DEF3 /* SNTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SNTool.h; path = SNTool/SNTool/SNTool.h; sourceTree = "<group>"; };
+		678C0F5E092B9735508993CEDACADBC5 /* libPods-SNPhotoCarmeraViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SNPhotoCarmeraViewController.a"; path = "libPods-SNPhotoCarmeraViewController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73F2FF772D348F1056870A3102992474 /* libPods-SNPhotoCarmeraViewControllerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SNPhotoCarmeraViewControllerUITests.a"; path = "libPods-SNPhotoCarmeraViewControllerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73F7EB3D42E28F352924E9E4858CB027 /* Pods-SNPhotoCarmeraViewControllerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SNPhotoCarmeraViewControllerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		774A8F7FDD4F976A8EA32AB3894B1023 /* Pods-SNPhotoCarmeraViewControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNPhotoCarmeraViewControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		789AB4D595F3D3D06052292D6E077913 /* Singletion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Singletion.h; path = SNTool/SNTool/Singletion.h; sourceTree = "<group>"; };
+		808D0705EA012BD1A6394ED3ACDB53C9 /* Pods-SNPhotoCarmeraViewControllerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SNPhotoCarmeraViewControllerTests-frameworks.sh"; sourceTree = "<group>"; };
+		80EF319054295F13B20C45C7886BC1A3 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		839C9743F7161DCABAE828F2403453DE /* Pods-SNPhotoCarmeraViewControllerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SNPhotoCarmeraViewControllerUITests-dummy.m"; sourceTree = "<group>"; };
+		89A18098C2C9922082F3F6F15EFD9C3E /* Pods-SNPhotoCarmeraViewController-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SNPhotoCarmeraViewController-frameworks.sh"; sourceTree = "<group>"; };
+		90AF2A77A26C66B5B38320C0244B3B12 /* Pods-SNPhotoCarmeraViewControllerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SNPhotoCarmeraViewControllerTests-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9704CB32D81003921519877DA00DB256 /* Pods-SNPhotoCarmeraViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SNPhotoCarmeraViewController-dummy.m"; sourceTree = "<group>"; };
+		A2FDB9D2FB4C0760C734AE4B0E21AD46 /* Pods-SNPhotoCarmeraViewControllerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SNPhotoCarmeraViewControllerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A9271C32EA0002C9FBDA732AAB4CF116 /* Pods-SNPhotoCarmeraViewControllerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNPhotoCarmeraViewControllerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A9D3360CD596ED0666E119CE242943F1 /* Pods-SNPhotoCarmeraViewControllerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SNPhotoCarmeraViewControllerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AA0C8DC6B5A43962103CA78B47FEF6A6 /* Pods-SNPhotoCarmeraViewControllerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SNPhotoCarmeraViewControllerTests-resources.sh"; sourceTree = "<group>"; };
+		ADA6B78DFF280837FA654E80ADD12EA6 /* Pods-SNPhotoCarmeraViewControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNPhotoCarmeraViewControllerTests.release.xcconfig"; sourceTree = "<group>"; };
+		ADE7FFB1970B5870516C0A2492DBAC61 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		B146A368D9DA12F2F977423206DB077F /* libSNTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSNTool.a; path = libSNTool.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B22F3400BD4E4727DEEDC158B8616B57 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		BF3BEF2D2A8F61BD0B5EDD74C10C6255 /* SNTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SNTool.m; path = SNTool/SNTool/SNTool.m; sourceTree = "<group>"; };
+		C1EDA7935EDD5EBB03D3B36C2E28FB9A /* NSString+SNTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SNTool.m"; path = "SNTool/SNTool/NSString+SNTool.m"; sourceTree = "<group>"; };
+		D8C68F66A352870B021E1FF6C346E933 /* Pods-SNPhotoCarmeraViewControllerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SNPhotoCarmeraViewControllerUITests-resources.sh"; sourceTree = "<group>"; };
+		EB3744CE48D160C6DA64A39AD81AD798 /* Pods-SNPhotoCarmeraViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SNPhotoCarmeraViewController.debug.xcconfig"; sourceTree = "<group>"; };
+		F552BA49EC849AC38672ED823DB4B43E /* SNTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SNTool-prefix.pch"; sourceTree = "<group>"; };
+		F9F082886E360F0541876C37B30D9E07 /* Pods-SNPhotoCarmeraViewController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SNPhotoCarmeraViewController-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FFD1B388613F28771075E6A363AD9125 /* SNTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SNTool-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		550650B63FB7262313A36D723DD61FC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34BFCB7244000E63B49439B08643FD31 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		787B2ACF3CB2A817121F45A06FF1F484 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C85945225565991E4C44D618B183644 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCCC454FAAD5C70945D5A6B683E6C786 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F3A5776EFDB87BEF1238C638D04E9CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA187DA3D1EE99AC4BB4A6920B86C406 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63677A6AC8FD0A6027D00F4ED4261855 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9AC974E3329F79899A7B3BE290FC894 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C76817FA5353D989D7BC33E8C5997B5 /* CoreGraphics.framework in Frameworks */,
+				93F12B05D8333C37D9CBEA3D1782CC04 /* Foundation.framework in Frameworks */,
+				7291E906AE8A3C1F92183154FE65DCDD /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		014E694C92EC765F8EC9319122D2A8FA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B8A8E20047268A011CB7C7EF3D8C7ED /* SNTool.xcconfig */,
+				FFD1B388613F28771075E6A363AD9125 /* SNTool-dummy.m */,
+				F552BA49EC849AC38672ED823DB4B43E /* SNTool-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SNTool";
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A4DBD434EA75DD3EDD3494C46AE6968 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22F32BC2EAD627E736E9CC1DEA183CE9 /* Pods-SNPhotoCarmeraViewControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9D3360CD596ED0666E119CE242943F1 /* Pods-SNPhotoCarmeraViewControllerUITests-acknowledgements.markdown */,
+				1FD7EA3921F407CD56876D6CB4F215B4 /* Pods-SNPhotoCarmeraViewControllerUITests-acknowledgements.plist */,
+				839C9743F7161DCABAE828F2403453DE /* Pods-SNPhotoCarmeraViewControllerUITests-dummy.m */,
+				1031DE20DFDEE336B18056DDA2C63F11 /* Pods-SNPhotoCarmeraViewControllerUITests-frameworks.sh */,
+				D8C68F66A352870B021E1FF6C346E933 /* Pods-SNPhotoCarmeraViewControllerUITests-resources.sh */,
+				5C4CB56C133BD6D4A3170FD7420F3BAF /* Pods-SNPhotoCarmeraViewControllerUITests.debug.xcconfig */,
+				A9271C32EA0002C9FBDA732AAB4CF116 /* Pods-SNPhotoCarmeraViewControllerUITests.release.xcconfig */,
+			);
+			name = "Pods-SNPhotoCarmeraViewControllerUITests";
+			path = "Target Support Files/Pods-SNPhotoCarmeraViewControllerUITests";
+			sourceTree = "<group>";
+		};
+		316AE642141FD0D179D0963AF7B55EC5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99492082DE4008AE3F41FD4F3E816B9E /* Pods-SNPhotoCarmeraViewController */,
+				78FE36200FB8C0353A213B1A2A6160EE /* Pods-SNPhotoCarmeraViewControllerTests */,
+				22F32BC2EAD627E736E9CC1DEA183CE9 /* Pods-SNPhotoCarmeraViewControllerUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		34D36C71E8AAA36280725B8E3DB4FE16 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B22F3400BD4E4727DEEDC158B8616B57 /* MBProgressHUD.h */,
+				ADE7FFB1970B5870516C0A2492DBAC61 /* MBProgressHUD.m */,
+				6174B4423FBBB2D4E8B1CE74AB3B144F /* Support Files */,
+			);
+			name = MBProgressHUD;
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		5A4DBD434EA75DD3EDD3494C46AE6968 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				409899CE1143F81E8130E2069D59605B /* CoreGraphics.framework */,
+				12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */,
+				5F7BDB2580B244756CFA046131516EF2 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6174B4423FBBB2D4E8B1CE74AB3B144F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				22BA71AAB7B5E78778B6E02952B1FB99 /* MBProgressHUD.xcconfig */,
+				2A2FA53C873B472A45FE331DA5634F3C /* MBProgressHUD-dummy.m */,
+				80EF319054295F13B20C45C7886BC1A3 /* MBProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		78FE36200FB8C0353A213B1A2A6160EE /* Pods-SNPhotoCarmeraViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2FDB9D2FB4C0760C734AE4B0E21AD46 /* Pods-SNPhotoCarmeraViewControllerTests-acknowledgements.markdown */,
+				73F7EB3D42E28F352924E9E4858CB027 /* Pods-SNPhotoCarmeraViewControllerTests-acknowledgements.plist */,
+				90AF2A77A26C66B5B38320C0244B3B12 /* Pods-SNPhotoCarmeraViewControllerTests-dummy.m */,
+				808D0705EA012BD1A6394ED3ACDB53C9 /* Pods-SNPhotoCarmeraViewControllerTests-frameworks.sh */,
+				AA0C8DC6B5A43962103CA78B47FEF6A6 /* Pods-SNPhotoCarmeraViewControllerTests-resources.sh */,
+				774A8F7FDD4F976A8EA32AB3894B1023 /* Pods-SNPhotoCarmeraViewControllerTests.debug.xcconfig */,
+				ADA6B78DFF280837FA654E80ADD12EA6 /* Pods-SNPhotoCarmeraViewControllerTests.release.xcconfig */,
+			);
+			name = "Pods-SNPhotoCarmeraViewControllerTests";
+			path = "Target Support Files/Pods-SNPhotoCarmeraViewControllerTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				CA97E452F8F289269ABE59BFD6F17A8D /* Pods */,
+				CE2AADC6D65BF3CC9C7685B0F364AE7D /* Products */,
+				316AE642141FD0D179D0963AF7B55EC5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		822C174482AE007BCEA38FF54C53642E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				15F3AA45F7FE84EE591BA95907E669C4 /* SNTool.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		99492082DE4008AE3F41FD4F3E816B9E /* Pods-SNPhotoCarmeraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F9F082886E360F0541876C37B30D9E07 /* Pods-SNPhotoCarmeraViewController-acknowledgements.markdown */,
+				065EF6168F187AFAFAFC038E6144E68D /* Pods-SNPhotoCarmeraViewController-acknowledgements.plist */,
+				9704CB32D81003921519877DA00DB256 /* Pods-SNPhotoCarmeraViewController-dummy.m */,
+				89A18098C2C9922082F3F6F15EFD9C3E /* Pods-SNPhotoCarmeraViewController-frameworks.sh */,
+				3D4A3C8A55342D64DE8CAEB9162A3E68 /* Pods-SNPhotoCarmeraViewController-resources.sh */,
+				EB3744CE48D160C6DA64A39AD81AD798 /* Pods-SNPhotoCarmeraViewController.debug.xcconfig */,
+				4B56A91D0030808375B4DF885E07464D /* Pods-SNPhotoCarmeraViewController.release.xcconfig */,
+			);
+			name = "Pods-SNPhotoCarmeraViewController";
+			path = "Target Support Files/Pods-SNPhotoCarmeraViewController";
+			sourceTree = "<group>";
+		};
+		CA97E452F8F289269ABE59BFD6F17A8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34D36C71E8AAA36280725B8E3DB4FE16 /* MBProgressHUD */,
+				D20897EBC3D26EA949CD39A90C0DAD1C /* SNTool */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE2AADC6D65BF3CC9C7685B0F364AE7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BDCDF3204CC98794FC63F74AB138E5A /* libMBProgressHUD.a */,
+				678C0F5E092B9735508993CEDACADBC5 /* libPods-SNPhotoCarmeraViewController.a */,
+				09445753996F4C2A8A71FEE497E2C2E1 /* libPods-SNPhotoCarmeraViewControllerTests.a */,
+				73F2FF772D348F1056870A3102992474 /* libPods-SNPhotoCarmeraViewControllerUITests.a */,
+				B146A368D9DA12F2F977423206DB077F /* libSNTool.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D20897EBC3D26EA949CD39A90C0DAD1C /* SNTool */ = {
+			isa = PBXGroup;
+			children = (
+				440AA1CE93E7B2F7E14FB8573661AF0B /* NSString+SNTool.h */,
+				C1EDA7935EDD5EBB03D3B36C2E28FB9A /* NSString+SNTool.m */,
+				789AB4D595F3D3D06052292D6E077913 /* Singletion.h */,
+				61050C90D7C1204834A36691D61690E3 /* SNTololMacro.h */,
+				64DB9AF3A6B603A6D403F0D824F9DEF3 /* SNTool.h */,
+				BF3BEF2D2A8F61BD0B5EDD74C10C6255 /* SNTool.m */,
+				822C174482AE007BCEA38FF54C53642E /* Resources */,
+				014E694C92EC765F8EC9319122D2A8FA /* Support Files */,
+			);
+			name = SNTool;
+			path = SNTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1B1D84BCA4F7BDAE79C37DF88C9DCE23 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897E2BE6A305D26BEF1B828D55F0F1DC /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBD168E10E9E753D6E19DF1E8D404095 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D01D914A32045FB612DF530A976060A6 /* NSString+SNTool.h in Headers */,
+				C69CB262638480A1D90B75B5C3040090 /* Singletion.h in Headers */,
+				032516A43CD93C95F3B1A5610CCA390F /* SNTololMacro.h in Headers */,
+				9898B5B0A13ACC07B906AC0C973FFFD4 /* SNTool.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		314776269787A5536FF39FC49B9A407F /* SNTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18233B086123B5E2133F7F1A5C8CF7A3 /* Build configuration list for PBXNativeTarget "SNTool" */;
+			buildPhases = (
+				36D754142C2F9A7F603654B413FC974E /* Sources */,
+				787B2ACF3CB2A817121F45A06FF1F484 /* Frameworks */,
+				FBD168E10E9E753D6E19DF1E8D404095 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF580BCF00B82285FAF78E411EF3C462 /* PBXTargetDependency */,
+			);
+			name = SNTool;
+			productName = SNTool;
+			productReference = B146A368D9DA12F2F977423206DB077F /* libSNTool.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		41991EC6A3933538CDF26C98A2E85E3F /* Pods-SNPhotoCarmeraViewControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BDAD48D0B7892D0AF578275CD562950 /* Build configuration list for PBXNativeTarget "Pods-SNPhotoCarmeraViewControllerUITests" */;
+			buildPhases = (
+				2E6DE0683327BB27FB4AADC4399EB181 /* Sources */,
+				DCCC454FAAD5C70945D5A6B683E6C786 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				976CCE2294C4A0B14BD9F42731933E94 /* PBXTargetDependency */,
+			);
+			name = "Pods-SNPhotoCarmeraViewControllerUITests";
+			productName = "Pods-SNPhotoCarmeraViewControllerUITests";
+			productReference = 73F2FF772D348F1056870A3102992474 /* libPods-SNPhotoCarmeraViewControllerUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		586F2DFA9BDCC6675C2546793A69E5CC /* MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B44251FA50022CA55D4B2FBE1468C76 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildPhases = (
+				FCC28E36A289F7E991B78A63CD0251F9 /* Sources */,
+				F9AC974E3329F79899A7B3BE290FC894 /* Frameworks */,
+				1B1D84BCA4F7BDAE79C37DF88C9DCE23 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD;
+			productName = MBProgressHUD;
+			productReference = 0BDCDF3204CC98794FC63F74AB138E5A /* libMBProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CF00F604392A6843B068BA2ED778AE12 /* Pods-SNPhotoCarmeraViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 602531DF9EC9A3EA6F26954667B72146 /* Build configuration list for PBXNativeTarget "Pods-SNPhotoCarmeraViewController" */;
+			buildPhases = (
+				C27886D68822E24BA4A06D4DA1ED4A7A /* Sources */,
+				550650B63FB7262313A36D723DD61FC0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07E1B05DEB01F8D06E5D6B8A6688439E /* PBXTargetDependency */,
+				901785BA4AF338B7696A86C4C80A139F /* PBXTargetDependency */,
+			);
+			name = "Pods-SNPhotoCarmeraViewController";
+			productName = "Pods-SNPhotoCarmeraViewController";
+			productReference = 678C0F5E092B9735508993CEDACADBC5 /* libPods-SNPhotoCarmeraViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E554A326DCAEB4EEA5F0FE7FCE9B31B5 /* Pods-SNPhotoCarmeraViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B63025A9BCB9D2BAEFBE355EC7A0463 /* Build configuration list for PBXNativeTarget "Pods-SNPhotoCarmeraViewControllerTests" */;
+			buildPhases = (
+				2D0459640CCB20DA3A824E1A1AD3941A /* Sources */,
+				EA187DA3D1EE99AC4BB4A6920B86C406 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B3C3A9EE4615D10EDA279AFE9C4E70D /* PBXTargetDependency */,
+			);
+			name = "Pods-SNPhotoCarmeraViewControllerTests";
+			productName = "Pods-SNPhotoCarmeraViewControllerTests";
+			productReference = 09445753996F4C2A8A71FEE497E2C2E1 /* libPods-SNPhotoCarmeraViewControllerTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CE2AADC6D65BF3CC9C7685B0F364AE7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				586F2DFA9BDCC6675C2546793A69E5CC /* MBProgressHUD */,
+				CF00F604392A6843B068BA2ED778AE12 /* Pods-SNPhotoCarmeraViewController */,
+				E554A326DCAEB4EEA5F0FE7FCE9B31B5 /* Pods-SNPhotoCarmeraViewControllerTests */,
+				41991EC6A3933538CDF26C98A2E85E3F /* Pods-SNPhotoCarmeraViewControllerUITests */,
+				314776269787A5536FF39FC49B9A407F /* SNTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D0459640CCB20DA3A824E1A1AD3941A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F13C27CEC0E04DC461E80D89F288648 /* Pods-SNPhotoCarmeraViewControllerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E6DE0683327BB27FB4AADC4399EB181 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBC86F232CFC7F7B10FC6D178290D634 /* Pods-SNPhotoCarmeraViewControllerUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36D754142C2F9A7F603654B413FC974E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5452AD3DB0025907C99AF1C4A2574BA /* NSString+SNTool.m in Sources */,
+				0EA1E0BF557F9E73FCE09DE4C41A6F69 /* SNTool-dummy.m in Sources */,
+				E1A5C1C515C0140C45452837C3BADBB1 /* SNTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C27886D68822E24BA4A06D4DA1ED4A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EBCA86C66F058931013230C739010DA /* Pods-SNPhotoCarmeraViewController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCC28E36A289F7E991B78A63CD0251F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6837AD005926AB2974513453DB787C5A /* MBProgressHUD-dummy.m in Sources */,
+				E6EB93F9F0E4C5727BFC3147BA91C599 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07E1B05DEB01F8D06E5D6B8A6688439E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 586F2DFA9BDCC6675C2546793A69E5CC /* MBProgressHUD */;
+			targetProxy = 26E7B48E48833CDCC832105B606A0E12 /* PBXContainerItemProxy */;
+		};
+		6B3C3A9EE4615D10EDA279AFE9C4E70D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SNPhotoCarmeraViewController";
+			target = CF00F604392A6843B068BA2ED778AE12 /* Pods-SNPhotoCarmeraViewController */;
+			targetProxy = 97E88B7A0C34F64B80C3566DF489341C /* PBXContainerItemProxy */;
+		};
+		901785BA4AF338B7696A86C4C80A139F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SNTool;
+			target = 314776269787A5536FF39FC49B9A407F /* SNTool */;
+			targetProxy = CC1878E9B34C79D2FCEE3D4243788348 /* PBXContainerItemProxy */;
+		};
+		976CCE2294C4A0B14BD9F42731933E94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SNPhotoCarmeraViewController";
+			target = CF00F604392A6843B068BA2ED778AE12 /* Pods-SNPhotoCarmeraViewController */;
+			targetProxy = B96FA7E06370AAC00AE540494DA3A41A /* PBXContainerItemProxy */;
+		};
+		BF580BCF00B82285FAF78E411EF3C462 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 586F2DFA9BDCC6675C2546793A69E5CC /* MBProgressHUD */;
+			targetProxy = A5DCDD261010BB861B48376E21906043 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		14F00A805CB8BD4A51330FB76A07B641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22BA71AAB7B5E78778B6E02952B1FB99 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MBProgressHUD;
+				PRODUCT_NAME = MBProgressHUD;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EE19F5DD95931924296F637BF18BD8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		31B286BCF3F76541755A62ABC096DF6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 774A8F7FDD4F976A8EA32AB3894B1023 /* Pods-SNPhotoCarmeraViewControllerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45091C0ADC23EB73F9D4FD663523D6D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B8A8E20047268A011CB7C7EF3D8C7ED /* SNTool.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SNTool/SNTool-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SNTool;
+				PRODUCT_NAME = SNTool;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5394C037E7A53F065244DF44EF61CAF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADA6B78DFF280837FA654E80ADD12EA6 /* Pods-SNPhotoCarmeraViewControllerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6875EB9D2EF5521ED479BC2E5687250A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22BA71AAB7B5E78778B6E02952B1FB99 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MBProgressHUD;
+				PRODUCT_NAME = MBProgressHUD;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B34FD11A5E1A4350AB63AFDE9AACF5B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB3744CE48D160C6DA64A39AD81AD798 /* Pods-SNPhotoCarmeraViewController.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B55C9C61DD666D7CA16D8DF26C15F790 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B8A8E20047268A011CB7C7EF3D8C7ED /* SNTool.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SNTool/SNTool-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SNTool;
+				PRODUCT_NAME = SNTool;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D720057F5A662F902C55B07FA00DF498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B56A91D0030808375B4DF885E07464D /* Pods-SNPhotoCarmeraViewController.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9957AB20A32BE83AEEB805EF2649556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9271C32EA0002C9FBDA732AAB4CF116 /* Pods-SNPhotoCarmeraViewControllerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5D35A4D7D743E442707B1EA0EF68588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C4CB56C133BD6D4A3170FD7420F3BAF /* Pods-SNPhotoCarmeraViewControllerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4568DEE257655D290C2B9CEAB37C934 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18233B086123B5E2133F7F1A5C8CF7A3 /* Build configuration list for PBXNativeTarget "SNTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45091C0ADC23EB73F9D4FD663523D6D5 /* Debug */,
+				B55C9C61DD666D7CA16D8DF26C15F790 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
+				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BDAD48D0B7892D0AF578275CD562950 /* Build configuration list for PBXNativeTarget "Pods-SNPhotoCarmeraViewControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5D35A4D7D743E442707B1EA0EF68588 /* Debug */,
+				D9957AB20A32BE83AEEB805EF2649556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		602531DF9EC9A3EA6F26954667B72146 /* Build configuration list for PBXNativeTarget "Pods-SNPhotoCarmeraViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B34FD11A5E1A4350AB63AFDE9AACF5B5 /* Debug */,
+				D720057F5A662F902C55B07FA00DF498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B44251FA50022CA55D4B2FBE1468C76 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6875EB9D2EF5521ED479BC2E5687250A /* Debug */,
+				14F00A805CB8BD4A51330FB76A07B641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B63025A9BCB9D2BAEFBE355EC7A0463 /* Build configuration list for PBXNativeTarget "Pods-SNPhotoCarmeraViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31B286BCF3F76541755A62ABC096DF6C /* Debug */,
+				5394C037E7A53F065244DF44EF61CAF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

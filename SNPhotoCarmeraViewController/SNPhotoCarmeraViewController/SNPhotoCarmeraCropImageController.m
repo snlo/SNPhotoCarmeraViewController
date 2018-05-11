@@ -1,21 +1,19 @@
 //
 //  CropImageController.m
-//  CropImage
+//  SNPhotoCarmeraViewControllor
 //
-//  Created by limuyun on 2017/1/10.
-//  Copyright © 2017年 biiway. All rights reserved.
+//  Created by snlo on 2017/1/10.
+//  Copyright © 2017年 snlo. All rights reserved.
 //
 
-#import "CropImageController.h"
-#import "UIImage+SNPhotoCarmera.h"
+#import "SNPhotoCarmeraCropImageController.h"
 
-#define ScreenWidth [UIScreen mainScreen].bounds.size.width
-#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#import "SNPhotoCarmeraTool.h"
 
 typedef void(^SeletecedBlock)(UIImage * image);
 typedef void(^CancelBlock)(void);
 
-@interface CropImageController ()<UIScrollViewDelegate>
+@interface SNPhotoCarmeraCropImageController ()<UIScrollViewDelegate>
 
 @property (nonatomic, strong) UIScrollView * scrollView;
 @property (nonatomic, strong) UIImageView * imageView;
@@ -28,7 +26,7 @@ typedef void(^CancelBlock)(void);
 
 @end
 
-@implementation CropImageController
+@implementation SNPhotoCarmeraCropImageController
 - (instancetype)initWithImage:(UIImage *)originalImage delegate:(id)delegate {
     self = [super init];
     if (self) {
@@ -46,7 +44,7 @@ typedef void(^CancelBlock)(void);
     return self;
 }
 + (instancetype)cropImageViewControllerWithImage:(UIImage *)image ratio:(CGFloat)ratio seletecedBlock:(void (^)(UIImage *))selectedBlock cancelBlock:(void (^)(void))cancelBlock {
-    CropImageController * VC = [[CropImageController alloc] init];
+    SNPhotoCarmeraCropImageController * VC = [[SNPhotoCarmeraCropImageController alloc] init];
     VC.originalImage = image;
     VC.ratio = ratio;
     VC.seletecedBlock = selectedBlock;
@@ -58,9 +56,9 @@ typedef void(^CancelBlock)(void);
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor blackColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
-    CGFloat height = ScreenWidth * self.ratio;
-    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0 ,ScreenWidth,height)];
-    _scrollView.center = CGPointMake(ScreenWidth / 2, ScreenHeight / 2);
+    CGFloat height = SCREEN_WIDTH * self.ratio;
+    _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0 ,SCREEN_WIDTH,height)];
+    _scrollView.center = CGPointMake(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2);
     _scrollView.bouncesZoom = YES;
     _scrollView.minimumZoomScale = 1;
     _scrollView.maximumZoomScale = 3;
@@ -71,13 +69,13 @@ typedef void(^CancelBlock)(void);
     _scrollView.showsVerticalScrollIndicator = NO;
     _scrollView.layer.borderWidth = 1.5;
     _scrollView.layer.borderColor = [UIColor redColor].CGColor;
-    if (_ovalClip) {
-        _scrollView.layer.cornerRadius = ScreenWidth/2.0;
+    if (_SNPhotoCarmera_ovalClip) {
+        _scrollView.layer.cornerRadius = SCREEN_WIDTH/2.0;
     }
     self.view.layer.masksToBounds = YES;
     if (_originalImage) {
         _imageView = [[UIImageView alloc] initWithImage:_originalImage];
-        CGFloat img_width = ScreenWidth;
+        CGFloat img_width = SCREEN_WIDTH;
         CGFloat img_height = _originalImage.size.height * (img_width/_originalImage.size.width);
         CGFloat img_y= (img_height - self.view.bounds.size.width)/2.0;
         _imageView.frame = CGRectMake(0,0, img_width, img_height);
@@ -104,7 +102,7 @@ typedef void(^CancelBlock)(void);
     CGRect cropframe = _scrollView.frame;
     UIBezierPath * path = [UIBezierPath bezierPathWithRoundedRect:self.view.bounds cornerRadius:0];
     UIBezierPath * cropPath = [UIBezierPath bezierPathWithRoundedRect:cropframe cornerRadius:0];
-    if (_ovalClip) {
+    if (_SNPhotoCarmera_ovalClip) {
         cropPath = [UIBezierPath bezierPathWithOvalInRect:cropframe];
     }
     [path appendPath:cropPath];
@@ -156,7 +154,7 @@ typedef void(^CancelBlock)(void);
 - (void)centerContent {
     CGRect imageViewFrame = _imageView.frame;
     
-    CGRect scrollBounds = CGRectMake(0, 0, ScreenWidth, ScreenWidth);
+    CGRect scrollBounds = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH);
     if (imageViewFrame.size.height > scrollBounds.size.height) {
         imageViewFrame.origin.y = 0.0f;
     }else {
@@ -188,8 +186,8 @@ typedef void(^CancelBlock)(void);
     CGImageRef imageRef =CGImageCreateWithImageInRect([_originalImage CGImage],rec);
     UIImage * image = [[UIImage alloc]initWithCGImage:imageRef];
     CGImageRelease(imageRef);
-    if (_ovalClip) {
-        image = [image ovalClip];
+    if (_SNPhotoCarmera_ovalClip) {
+        image = [image SNPhotoCarmera_ovalClip];
     }
     return image;
 }
