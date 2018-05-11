@@ -18,6 +18,7 @@
 	[super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 //    pod trunk push SNPhotoCarmeraViewController.podspec --verbose --allow-warnings --use-libraries
+	
 
 }
 
