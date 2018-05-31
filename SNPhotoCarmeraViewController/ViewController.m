@@ -38,7 +38,7 @@
 
 - (void)handleButton:(UIButton *)sender {
 	self.vc = [SNPhotoCameraViewController pictureViewControllerWithPresent:self estimatedSize:CGSizeMake(70, 70)];
-	self.vc.tintColor = [UIColor yellowColor];
+	
 	SN_ASCII_String(@"---- %@",self.vc.imagePickerController.navigationBar);
 	
 	
