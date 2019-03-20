@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import <SNTool.h>
+#import <SNTool/SNTool.h>
 
 #import "UIImage+SNPhotoCarmera.h"
 
