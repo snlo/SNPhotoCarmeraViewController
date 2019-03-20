@@ -68,9 +68,10 @@ typedef void(^SelectedCancelBlock)(void);
             }];
             VC.isOvalcropView = YES;
             [[SNTool topViewController].navigationController pushViewController:VC animated:YES];
-            
-            return;
-            
+			
+#warning 屏蔽图片编辑器
+//            return;
+			
             if (self.imagePickerController.allowsEditing) {
                 self.selectedImage = info[UIImagePickerControllerEditedImage];
             } else {
@@ -92,9 +93,9 @@ typedef void(^SelectedCancelBlock)(void);
         [[SNTool topViewController].navigationController pushViewController:VC animated:YES];
         
         
-        
-        return;
-        
+#warning 屏蔽图片编辑器
+//        return;
+		
         
         if (self.imagePickerController.allowsEditing) {
             self.selectedImage = info[UIImagePickerControllerEditedImage];
@@ -107,14 +108,26 @@ typedef void(^SelectedCancelBlock)(void);
         self.selectedImageBlock(self.selectedImage);
     }
     [self removeFromParentViewController];
-    [self.parentVC dismissViewControllerAnimated:YES completion:nil];
+	[self.parentVC dismissViewControllerAnimated:YES completion:^{
+		if ([[UIApplication sharedApplication] performSelector:@selector(setStatusBarHidden:animated:)]) {
+			[[UIApplication sharedApplication] setStatusBarHidden:NO animated:YES];
+		} else {
+			[UIApplication sharedApplication].statusBarHidden = NO;
+		}
+	}];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     if (self.selectedCancelBlock) self.selectedCancelBlock();
     
     [self removeFromParentViewController];
-    [self.parentVC dismissViewControllerAnimated:YES completion:nil];
+	[self.parentVC dismissViewControllerAnimated:YES completion:^{
+		if ([[UIApplication sharedApplication] performSelector:@selector(setStatusBarHidden:animated:)]) {
+			[[UIApplication sharedApplication] setStatusBarHidden:NO animated:YES];
+		} else {
+			[UIApplication sharedApplication].statusBarHidden = NO;
+		}
+	}];
 }
 
 #pragma mark -- SNPhotoCarmeraCropImageDelegate
@@ -218,27 +231,11 @@ typedef void(^SelectedCancelBlock)(void);
     }
 }
 
-- (void)setTintColor:(UIColor *)tintColor {
-    _tintColor = tintColor;
-    self.imagePickerController.navigationBar.tintColor = _tintColor;
-    self.imagePickerController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:_tintColor};
-}
-
 - (UIImagePickerController *)imagePickerController {
     if (!_imagePickerController) {
         _imagePickerController = [[UIImagePickerController alloc]init];
         _imagePickerController.delegate = self;
     } return _imagePickerController;
 }
-
-//- (void)setContentColor:(UIColor *)contentColor {
-//    _contentColor = contentColor;
-////    [SNTool sharedManager].contentColor = _contentColor;
-//}
-//- (void)setBlackColor:(UIColor *)blackColor {
-//    _blackColor = blackColor;
-////    [SNTool sharedManager].blackColor = _blackColor;
-//}
-
 
 @end

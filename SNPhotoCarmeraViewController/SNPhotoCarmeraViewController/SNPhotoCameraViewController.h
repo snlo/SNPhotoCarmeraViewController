@@ -21,21 +21,6 @@
 @property (nonatomic, readonly) UIImagePickerController * imagePickerController;
 
 /**
- 主题色
- */
-@property (nonatomic, strong) UIColor * tintColor;
-
-/**
- 内容色，用于更新统一
- */
-@property (nonatomic, strong) UIColor * contentColor;
-
-/**
- 黑色，用于更新统一
- */
-@property (nonatomic, strong) UIColor * blackColor;
-
-/**
  初始化
 
  @param presentViewController 呈现视图控制器

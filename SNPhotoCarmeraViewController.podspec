@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SNPhotoCarmeraViewController"
-  s.version      = "0.0.4"
+  s.version      = "0.0.6"
   s.summary      = "Select pictures / photos, from a photo album or camera."
 
   # This description is used to generate tags and improve search results.
