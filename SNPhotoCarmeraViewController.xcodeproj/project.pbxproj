@@ -360,17 +360,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SNPhotoCarmeraViewController/Pods-SNPhotoCarmeraViewController-resources.sh",
-				"${PODS_ROOT}/SNTool/SNTool/SNTool/SNTool.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNPhotoCarmeraViewController/Pods-SNPhotoCarmeraViewController-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SNTool.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNPhotoCarmeraViewController/Pods-SNPhotoCarmeraViewController-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SNPhotoCarmeraViewController/Pods-SNPhotoCarmeraViewController-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SNPhotoCarmeraViewController/Pods-SNPhotoCarmeraViewController-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E2BEDF7B5086C4CC25C7AEEF /* [CP] Check Pods Manifest.lock */ = {
